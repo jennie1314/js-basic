@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>17-if双分支</title>
+</head>
+
+<body>
+  <script>
+    /* if双分支:
+    两种情况、
+    不执行情况1，必执行情况2
+    执行了情况1，不执行情况2
+    语法结构: if() { } else { }
+    */
+    //  案例1: 判断年底是否有奖金
+    // 1. 保存输入的工龄
+    // let workAge = +prompt('请输入工龄:')
+    // // 2. 双分支判断
+    // if (workAge > 1) {
+    //   document.write('奖金+2000')
+    // } else {
+    //   document.write('工龄不够、继续积累')
+    // }
+
+    //  案例2:  判断平年闰年
+    // 1. 保存输入的年份
+    let year = +prompt('请输入年份:')
+    // 2. 双分支判断
+    if (year % 400 === 0 || year % 4 === 0 && year % 100 !== 0) {
+      document.write('闰年')
+    } else {
+      document.write('平年')
+    }
+  </script>
+</body>
+
+</html>

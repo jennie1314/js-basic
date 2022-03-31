@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05-一元运算符</title>
+</head>
+
+<body>
+  <script>
+    // 一元运算符:  
+    // 1.++：自增运算符
+    let i = 1
+    // i = i  + 1
+    // i += 1
+    // (1) 后置++
+    i++//  等同于 =>  i = i  + 1
+    console.log(i)
+    // (2) 前置++
+    ++i//  等同于 =>  i = i + 1
+    console.log(i)
+
+    // 2.--:  自减运算符
+    // (1) 后置--
+    i--// 等同于 =>  i = i - 1
+    console.log(i)
+    // (2) 前置--
+    --i // 等同于 => i = i - 1
+    console.log(i)
+
+  // 结论: 
+  // 1. 单独对某个变量使用的时候， 前置、后置没有区别，
+        //  都是让变量的值+1或-1
+  // 2. 经常用于计数操作，比如: 循环结构
+  // 3. 习惯问题、后置用的多一点，比如: i++
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01-js代码的书写位置</title>
+</head>
+
+<body>
+  <!-- 1. 第一种: 内部式 -->
+  <!-- <script>
+    // alert: 警告弹窗  固定的写法，小括号里写什么，浏览器就弹什么
+    alert('Hello World')
+  </script> -->
+
+  <!-- 2. 第二种: 外部式 -->
+
+  <!-- 注意: 一旦使用了外部式，此时的script中间就不能在写JS代码了，否则会被忽略 -->
+  <script src="./my.js">
+    alert('嗨，黑马彭于晏')// 这个代码会被忽略，是无效的代码
+  </script>
+
+  <!-- 3. 第三种: 内联式(写在标签中的JS代码）-> 了解即可（用的很少） -->
+  <!-- <button onclick="alert('Hello China')">点我试试</button> -->
+
+  <!-- 我们当下学习阶段，为了简单起见，暂时一律使用内部式的方式，来学习JS -->
+</body>
+
+</html>

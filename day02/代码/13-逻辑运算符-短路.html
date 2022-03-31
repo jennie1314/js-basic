@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13-逻辑运算符-短路</title>
+</head>
+
+<body>
+  <script>
+    // 短路:
+    // 1. 概念： 当左边的操作数满足一定的条件，右边不再执行
+    // 2. 只存在 &&、 || 两个逻辑运算符中
+    // 3.1:   && 的短路: 左假则短路（右边不再执行）
+    false && document.write('&& -> 八戒呢?')
+    // 3.2:   || 的短路: 左真则短路（右边不再执行）
+    true || document.write('|| -> 八戒呢?')
+
+
+
+    let i = 1
+    let j = false && i++
+    // let j = true && i++
+    console.log(i)
+    console.log(j)
+  </script>
+</body>
+
+</html>

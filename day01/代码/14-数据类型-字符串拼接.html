@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>14-数据类型-字符串拼接</title>
+</head>
+
+<body>
+  <script>
+    let name = '梁静茹'
+    let song = '勇气'
+
+    // 拼接
+    console.log(name + song)
+
+    // 需求： 把 name 和 song 两个变量的值放入 xxx 的位置
+    // let msg = '我是xxx, 我唱了一首很勇敢的歌叫做xxx, 你喜欢么?'
+
+    let msg = '我是' + name + '我唱了一首很勇敢的歌叫作' + song + ', 你喜欢么?'
+    console.log(msg)
+    // 这样做可以实现，但拼接字符串很恼火, 接下来给大家介绍一个非常好用的技巧，模板字符串
+  </script>
+</body>
+
+</html>

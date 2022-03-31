@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>21-类型转换-显式转换-字符串转数字</title>
+</head>
+
+<body>
+  <script>
+    // 显式(强制)转换:  程序员 通过代码把一种类型 转换为 另一种 类型
+    // 字符串转数字
+    // +/Number(): 只能转换纯数字字符串，否则会转换失败，得到一个NaN的结果
+    // parseInt(): 1. 提取字符串的第一个完整的整数部分 2. 对数字取整
+    // parseFloat(): 提取字符串的第一个完整的小数部分
+    // 相同点: 如果字符串以非数字开头，二者都会转换失败，得到一个NaN的结果
+    // 不同点: parseInt()只会保留整数部分，parseFloat()会保留小数部分
+    let s1 = '3.14'
+    console.log(parseInt(s1))// 3
+    console.log(parseFloat(s2))// 3.14
+
+    let s2 = '10.8A123'
+    console.log(parseInt(s2))// 10
+    console.log(parseFloat(s2))// 10.8
+
+    let s3 = 'Hello123'
+    console.log(parseInt(s3))// NaN
+    console.log(parseFloat(s3))// NaN
+
+  </script>
+</body>
+
+</html>

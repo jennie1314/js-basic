@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12-逻辑运算符</title>
+</head>
+
+<body>
+  <script>
+    // 判断一个数字 大于5 并且 小于10
+    let x = 6
+    // 错误(数学中的写法)
+    // 5 < x < 10
+    // 正确(JS的写法) -> 逻辑运算符
+    console.log(x > 5 && x < 10)
+    // 逻辑运算符: &&、 ||、 !
+    //  1. &&: 全真则真、一假则假
+    console.log(true && true)
+    console.log(true && false)
+    console.log(false && true)
+    console.log(false && false)
+
+    //  2. ||: 一真则真、全假则假
+    console.log(true || true)
+    console.log(true || false)
+    console.log(false || true)
+    console.log(false || false)
+    //  3. !: 真变假、假变真
+    console.log(!true)
+    console.log(!false)
+  </script>
+</body>
+
+</html>

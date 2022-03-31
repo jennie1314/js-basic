@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>18-if多分支</title>
+</head>
+
+<body>
+  <script>
+    // 多分支: 有三种及其以上的情况执行
+    // 1. 得到用户的输入
+    let hour = +prompt('请输入当前时间:')
+    // 3. 多分支判断
+    if (hour < 12) {
+      document.write('上午好')
+    } else if (hour < 18) {
+      document.write('下午好')
+    } else {
+      document.write('晚上好')
+    }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>15-数据类型-模板字符串</title>
+</head>
+
+<body>
+  <script>
+
+
+    // 模板字符串: 用反引号声明的字符串叫做模板字符串
+    // 优点: 很方便的在字符串中嵌入变量，语法  ${变量}
+
+    // 需求： 把 name 和 song 两个变量的值放入 xxx 的位置
+    let name = '梁静茹'
+    let song = '勇气'
+    let msg = `我是${name}, 我唱了一首很勇敢的歌叫作${song}, 你喜欢么?`
+
+    console.log(msg)
+  </script>
+</body>
+
+</html>

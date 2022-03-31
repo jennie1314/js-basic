@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>00-初体验</title>
+  <style>
+    button {
+      outline: none;
+      border: unset;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 17px;
+      background: #ccc;
+      margin: 0 3px;
+    }
+
+    .active {
+      background: #f0e;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="active">推荐</button>
+  <button>新闻</button>
+  <button>体育</button>
+  <button>娱乐</button>
+  <script>
+    let btns = document.querySelectorAll('button')
+    for (let i = 0; i < btns.length; i++) {
+      btns[i].addEventListener('click', function () {
+        document.querySelector('.active').className = ''
+        this.className = 'active'
+      })
+    }
+  </script>
+</body>
+
+</html>

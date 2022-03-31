@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>16-if单分支</title>
+</head>
+
+<body>
+  <script>
+    // if单分支: 只有一种情况、条件成立则执行
+    // 需求: 用户输入高考成绩，如果分数大于700，则提示恭喜考入黑马程序员
+    // 1. 得到用户的输入
+    let mark = +prompt('请输入高考分数:')
+    // 2. 单分支判断（条件成立则执行）
+    if (mark > 700) {
+      document.write('恭喜考入黑马程序员')
+    }
+  </script>
+</body>
+
+</html>
