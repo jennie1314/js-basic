@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02-案例-for循环</title>
+</head>
+
+<body>
+  <script>
+    // 1. for循环输出 1 - 100 数字
+    for (let i = 1; i <= 100; i++) {
+      console.log(i)
+    }
+    // 2. 求 1 - 100 之间所有偶数的和
+    // 2.1 声明累加和变量
+    let sum = 0
+    for (let i = 1; i <= 100; i++) {
+      // 2.2 偶数相加
+      if (i % 2 === 0) {
+        sum += i
+      }
+    }
+    console.log(`sum = ${sum}`)
+    // 3. 打印 5个 小星星
+    for (let i = 1; i <= 5; i++) {
+      document.write('⭐️')
+    }
+    // 4. 循环数组
+    let names = ['马超', '赵云', '张飞', '关羽', '黄忠']
+    for (let i = 0; i < names.length; i++) {
+      console.log(names[i])
+    }
+  </script>
+</body>
+
+</html>
